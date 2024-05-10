@@ -25,7 +25,7 @@ function Timeline() {
       },
       {
         user: "nav0209",
-        postImage: "https://images.unsplash.com/photo-1474552226712-ac0f0961a954?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        postImage: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         likes: 200.000,
         timestamps: "2h",
       },
@@ -35,7 +35,7 @@ function Timeline() {
         <div className='timeline_left'>
           <div className='timeline_post'>
            {posts.map(post => (
-              <Post user={post.user} postImage={post.postImage} like={post.likes} timestamps={post.timestamps}/>
+              <Post user={post.user} postImage={post.postImage} likes={post.likes} timestamps={post.timestamps}/>
            ))}
           </div>
         </div>

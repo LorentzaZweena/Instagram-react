@@ -13,12 +13,12 @@ function Post({user, postImage, likes, timestamps}) {
         <div className='post_header'>
           <div className='post_headerAuthor'>
             <Avatar>{user.charAt(0).toUpperCase()}</Avatar>
-            {user} <span>{timestamps}</span>
+            &#8200;&#8200;{user}&#8200;&#8200;<span>{timestamps}</span>
           </div>
           <img src={MoreIcon}/>
         </div>
         <div className='post_image'>
-          <img src='https://images.unsplash.com/photo-1517232115160-ff93364542dd?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' />
+          <img src={postImage} />
         </div>
         <div className='post_footer'>
           <div className='post_footerIcons'>
@@ -31,7 +31,8 @@ function Post({user, postImage, likes, timestamps}) {
               <img src={Bookmark} className='postIcon2'/>
             </div>
           </div>
-          3.700.500 Likes
+          {/* 3.700.500 Likes */}
+          {likes} Like
         </div>
     </div>
   )
